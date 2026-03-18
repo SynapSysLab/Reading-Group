@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # 🧠 SynapSys Reading Group
 Welcome! This is an academic reading group, focused on high-quality discussion of research papers in:
  
@@ -21,24 +17,26 @@ Our goal is to bridge **theory ↔ practice**, with an emphasis on:
 Whether you’re a PhD student, researcher, or practitioner, you’re very welcome here — as long as you engage respectfully and constructively.
 
 🔗 **Join the SynapSys Reading Group Discord server:**  
-👉 [Discord](https://discord.gg/KWa43huM)
+👉 [Discord](https://discord.gg/wVWdkTAR)
 
 <p align="left">
-  <a href="https://discord.gg/KWa43huM">
+  <a href="https://discord.gg/wVWdkTAR">
     <img src="https://img.shields.io/badge/Discord-Join%20Server-5865F2?logo=discord&logoColor=white" alt="Discord Server">
   </a>
 </p>
 
 # 📅 Sessions
 
-## Upcoming
-
 ### 🔹 [SynapSys RG #01] 
 February 9, 2026 3:00 PM
 
 **📄 Paper: [LoRA: Low-Rank Adaptation of Large Language Models, Arxiv, 2021](https://arxiv.org/abs/2106.09685)**
 
-👥 Presenter: Mohammad Yekta
+👥 Presenter: [Mohammad Yekta](https://www.linkedin.com/in/mohammad-yekta/)
 
-## Past
-*(Coming soon!)*
+### 🔹 [SynapSys RG #02] 
+March 16, 2026 2:15 PM
+
+**📄 [Introduction to LLM Inference - Part 1](https://www.youtube.com/watch?v=0MvV7ySP0-c)**
+
+👥 Presenter: [Mohammad Talaei](https://www.linkedin.com/in/mohammad-talaei-mt/)
