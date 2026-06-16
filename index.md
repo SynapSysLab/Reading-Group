@@ -17,10 +17,10 @@ Our goal is to bridge **theory ↔ practice**, with an emphasis on:
 Whether you’re a PhD student, researcher, or practitioner, you’re very welcome here — as long as you engage respectfully and constructively.
 
 🔗 **Join the SynapSys Reading Group Discord server:**  
-👉 [Discord](https://discord.gg/wVWdkTAR)
+👉 [Discord](https://discord.gg/RZD4cn9Bd)
 
 <p align="left">
-  <a href="https://discord.gg/wVWdkTAR">
+  <a href="https://discord.gg/RZD4cn9Bd">
     <img src="https://img.shields.io/badge/Discord-Join%20Server-5865F2?logo=discord&logoColor=white" alt="Discord Server">
   </a>
 </p>
