@@ -41,9 +41,9 @@ March 16, 2026 2:15 PM
 
 👥 Presenter: [Mohammad Talaei](https://www.linkedin.com/in/mohammad-talaei-mt/)
 
-### 🔹 [SynapSys RG #03] (Incoming)
+### 🔹 [SynapSys RG #03] 
 June 19, 2026 11:00 AM
 
-**📄 Introduction to LLM Inference - Part 2**
+**📄 [Introduction to LLM Inference - Part 2](https://youtu.be/i2M4keM2LaQ)**
 
 👥 Presenter: [Mohammad Talaei](https://www.linkedin.com/in/mohammad-talaei-mt/)
