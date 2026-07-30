@@ -27,23 +27,41 @@ Whether you’re a PhD student, researcher, or practitioner, you’re very welco
 
 # 📅 Sessions
 
-### 🔹 [SynapSys RG #01] 
-February 9, 2026 3:00 PM
+## LLM Inference
 
-**📄 Paper: [LoRA: Low-Rank Adaptation of Large Language Models, Arxiv, 2021](https://arxiv.org/abs/2106.09685)**
-
-👥 Presenter: [Mohammad Yekta](https://www.linkedin.com/in/mohammad-yekta/)
-
-### 🔹 [SynapSys RG #02] 
+### 🔹 [LLM Inference #01] 
 March 16, 2026 2:15 PM
 
 **📄 [Introduction to LLM Inference - Part 1](https://www.youtube.com/watch?v=0MvV7ySP0-c)**
 
 👥 Presenter: [Mohammad Talaei](https://www.linkedin.com/in/mohammad-talaei-mt/)
 
-### 🔹 [SynapSys RG #03] 
+### 🔹 [LLM Inference #02] 
 June 19, 2026 11:00 AM
 
 **📄 [Introduction to LLM Inference - Part 2](https://youtu.be/i2M4keM2LaQ)**
 
 👥 Presenter: [Mohammad Talaei](https://www.linkedin.com/in/mohammad-talaei-mt/)
+
+### 🔹 [LLM Inference #03] 
+July 10, 2026 11:00 AM
+
+**📄 [Introduction to LLM Inference - Part 3](https://youtu.be/5HG_rv5BTCU)**
+
+👥 Presenter: [Mohammad Talaei](https://www.linkedin.com/in/mohammad-talaei-mt/)
+
+## Paper Reading
+
+### 🔹 [Paper #01] 
+July 17, 2026 10:00 AM
+
+**📄 Paper: [FedALT: Federated Fine-Tuning through Adaptive Local Training with Rest-of-World LoRA, AAAI, 2026](https://www.youtube.com/watch?v=F9s22Kd2GDI)**
+
+👥 Presenter: [Mohammad Yekta](https://www.linkedin.com/in/mohammad-yekta/)
+
+### 🔹 [Paper #02] 
+July 24, 2026 11:00 AM
+
+**📄 Paper: [CoLLMLight: Cooperative Large Language Model Agents for Network-Wide Traffic Signal Control, ICLR, 2026](https://www.youtube.com/watch?v=boAQjkC9cWg)**
+
+👥 Presenter: Atefeh Hemmati
