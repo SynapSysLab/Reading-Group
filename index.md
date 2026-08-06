@@ -1,4 +1,4 @@
-# 🧠 SynapSys Reading Group
+# SynapSys Reading Group
 Welcome! This is an academic reading group, focused on high-quality discussion of research papers in:
  
 - Distributed Systems
@@ -49,7 +49,13 @@ Whether you’re a PhD student, researcher, or practitioner, you’re very welco
 <td style="text-align:center">02</td>
 <td style="text-align:left">Jul 24, 2026 – 11:00 AM</td>
 <td style="text-align:left"><a href="https://www.youtube.com/watch?v=boAQjkC9cWg">CoLLMLight: Cooperative Large Language Model Agents for Network-Wide Traffic Signal Control, ICLR, 2026</a></td>
-<td style="text-align:center">Atefeh Hemmati</td>
+<td style="text-align:center"><a href="https://www.linkedin.com/in/atefeh-hemmati-93a1261b3/">Atefeh Hemmati</a></td>
+</tr>
+<tr>
+<td style="text-align:center">03</td>
+<td style="text-align:left">Jul 31, 2026 – 10:30 AM</td>
+<td style="text-align:left"><a href="https://youtu.be/mpx83dA_MvY?si=hZqgUpcCh4a6-9Oj">Communication-Efficient Multimodal Federated Learning: Joint Modality and Client Selection, IEEE TMC, 2026</a></td>
+<td style="text-align:center">Jintao Liu</td>
 </tr>
 </tbody>
 </table>
