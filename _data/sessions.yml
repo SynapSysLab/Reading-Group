@@ -1,0 +1,143 @@
+# Each track renders as one table on the home page, in the order listed here.
+# List sessions oldest first; numbering follows that order.
+#
+# Track options:
+#   label: prefix numbered per row (e.g. "Paper 1: ...")
+#   order: desc to show newest first
+#   presenter_label: text before the presenter name (default "Presenter")
+#   focus_style: list to show focus as bullets instead of tags
+#
+# Session fields:
+#   date: YYYY-MM-DD, time, title, venue, presenter, presenter_url
+#   label: overrides the numbered track label (e.g. "Guest 1")
+#   youtube: video ID (leave empty for "coming soon")
+#   focus: list of topics
+#   bio, website: speaker bio (shown collapsed) and personal site
+
+- id: guest-speakers
+  title: Guest Speakers
+  order: desc
+  presenter_label: Guest Speaker
+  focus_style: list
+  sessions:
+    - date: 2026-08-28
+      time: "10:30 AM"
+      label: Guest 1
+      title: Auto-Research - Part 1
+      presenter: Bojie Shen
+      presenter_url: https://bojie-shen.com/
+      youtube: T70br9iQq88
+      focus: &autoresearch_focus
+        - How to build auto-research agents
+        - How to use these agents to conduct actual research
+        - Key lessons learned from building and using auto-research agents
+      bio: &bojie_bio >-
+        Bojie Shen is a Postdoctoral Research Fellow in the Urban Computing Lab at Monash University.
+        He received his Ph.D. from the Faculty of Information Technology at Monash University, under the
+        supervision of Associate Professor Muhammad Aamir Cheema, Associate Professor Daniel Harabor, and
+        Professor Peter Stuckey. He also holds a Bachelor of Software Engineering (with Honors) from Monash
+        University. His research interests span transportation and optimization, including heuristic search,
+        multi-agent pathfinding, and electric vehicle routing.
+    - date: 2026-09-04
+      time: "10:30 AM"
+      label: Guest 1
+      title: Auto-Research - Part 2
+      presenter: Bojie Shen
+      presenter_url: https://bojie-shen.com/
+      youtube: rsDpjQXsjes
+      focus: *autoresearch_focus
+      bio: *bojie_bio
+    - date: 2026-10-02
+      time: "10:15 AM"
+      label: Guest 2
+      title: "Learning to Orchestrate Multi-Agent Systems for Visual Reasoning and Embodied AI: Towards Neuro-Symbolic Agentic AI"
+      presenter: Dr. Zhixi Cai
+      presenter_url: https://profile.controlnet.space/
+      youtube: qLdiA31FpqA
+      focus: [Neuro-Symbolic Agentic AI, Multi-Agent Systems, Visual Reasoning, Embodied AI]
+      bio: >-
+        Zhixi Cai is a Lecturer at Monash University and a researcher at the VL4AI Research Lab, working at
+        the intersection of computer vision, neuro-symbolic AI, agentic AI, and embodied intelligence. His
+        research focuses on building interpretable, robust, and verifiable AI systems that combine neural
+        perception with symbolic reasoning and structured decision-making. He received his PhD in Artificial
+        Intelligence from Monash University, following research on multimodal deepfake generation and video
+        understanding, and has since worked on compositional neuro-symbolic systems for visual reasoning,
+        autonomous robotics, and embodied AI. His research has been published at leading venues including
+        CVPR, ICCV, ECCV, ICLR, and ACM Multimedia, with multiple recognised contributions and open-source
+        projects.
+
+- id: paper-reading
+  title: Paper Reading
+  label: Paper
+  order: desc
+  sessions:
+    - date: 2026-07-17
+      time: "10:00 AM"
+      title: "FedALT: Federated Fine-Tuning through Adaptive Local Training with Rest-of-World LoRA"
+      venue: AAAI 2026
+      presenter: Mohammad Yekta
+      presenter_url: https://www.linkedin.com/in/mohammad-yekta/
+      youtube: F9s22Kd2GDI
+      focus: [Large Language Models, LLM Fine-tuning, Federated Learning]
+    - date: 2026-07-24
+      time: "11:00 AM"
+      title: "CoLLMLight: Cooperative Large Language Model Agents for Network-Wide Traffic Signal Control"
+      venue: ICLR 2026
+      presenter: Atefeh Hemmati
+      presenter_url: https://www.linkedin.com/in/atefeh-hemmati-93a1261b3/
+      youtube: boAQjkC9cWg
+      focus: [LLM Agents]
+    - date: 2026-07-31
+      time: "10:30 AM"
+      title: "Communication-Efficient Multimodal Federated Learning: Joint Modality and Client Selection"
+      venue: IEEE TMC 2026
+      presenter: Jintao Liu
+      youtube: mpx83dA_MvY
+      focus: [Federated Learning, Recommendation Systems]
+    - date: 2026-08-14
+      time: "10:15 AM"
+      title: Agent-Oriented Planning in Multi-Agent Systems
+      venue: ICLR 2025
+      presenter: Zihao Chen
+      presenter_url: https://www.linkedin.com/in/dylanchenvic/
+      youtube: GSUq94W1IXs
+      focus: [Multi-Agent Systems, Task Decomposition and Allocation]
+    - date: 2026-09-11
+      time: "10:30 AM"
+      title: "FedAFD: Multimodal Federated Learning via Adversarial Fusion and Distillation"
+      venue: CVPR 2026
+      presenter: Matin Zamani
+      presenter_url: https://www.linkedin.com/in/matin-zamani-1ab350101/
+      youtube: 3FOurIGjYo4
+      focus: [Federated Learning, Multimodality, Missing Modality, Knowledge Distillation]
+
+- id: llm-inference
+  title: LLM Inference
+  sessions:
+    - date: 2026-03-16
+      time: "2:15 PM"
+      title: Introduction to LLM Inference - Part 1
+      presenter: Mohammad Talaei
+      presenter_url: https://www.linkedin.com/in/mohammad-talaei-mt/
+      youtube: 0MvV7ySP0-c
+    - date: 2026-06-19
+      time: "11:00 AM"
+      title: Introduction to LLM Inference - Part 2
+      presenter: Mohammad Talaei
+      presenter_url: https://www.linkedin.com/in/mohammad-talaei-mt/
+      youtube: i2M4keM2LaQ
+    - date: 2026-07-10
+      time: "11:00 AM"
+      title: Introduction to LLM Inference - Part 3
+      presenter: Mohammad Talaei
+      presenter_url: https://www.linkedin.com/in/mohammad-talaei-mt/
+      youtube: 5HG_rv5BTCU
+
+- id: conference
+  title: Conference Presentations
+  sessions:
+    # Date is the YouTube upload date; presenter not stated in the video description.
+    - date: 2026-05-19
+      title: "A Multi-Armed Bandit–Based Participant Selection Method for Federated Recommendation Systems"
+      venue: CCGrid 2026
+      youtube: sqZ0e-g2GoA

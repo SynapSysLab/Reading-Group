@@ -1,0 +1,57 @@
+{% assign track = include.track %}
+{% if track.order == 'desc' %}{% assign rows = track.sessions | reverse %}{% else %}{% assign rows = track.sessions %}{% endif %}
+<table class="sessions">
+  <thead>
+    <tr>
+      <th style="width: 20%;">Date</th>
+      <th style="width: 45%;">Topic</th>
+      <th style="width: 35%;">Video</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for s in rows %}
+    {% if track.order == 'desc' %}{% assign n = forloop.rindex %}{% else %}{% assign n = forloop.index %}{% endif %}
+    {% assign day = s.date | date: '%-d' | plus: 0 %}
+    {% assign last = day | modulo: 10 %}
+    {% if day >= 11 and day <= 13 %}{% assign suffix = 'th' %}
+    {% elsif last == 1 %}{% assign suffix = 'st' %}
+    {% elsif last == 2 %}{% assign suffix = 'nd' %}
+    {% elsif last == 3 %}{% assign suffix = 'rd' %}
+    {% else %}{% assign suffix = 'th' %}{% endif %}
+    <tr>
+      <td data-label="Date">
+        {{ s.date | date: '%B' }} {{ day }}<sup>{{ suffix }}</sup>, {{ s.date | date: '%Y' }}
+        {% if s.time %}<br><span class="muted">{{ s.time }}</span>{% endif %}
+      </td>
+      <td data-label="Topic">
+        <b>{% if s.label %}{{ s.label }}: {% elsif track.label %}{{ track.label }} {{ n }}: {% endif %}{{ s.title }}</b>
+        {% if s.venue %}<br>• {{ s.venue }}{% endif %}
+        {% if s.presenter %}
+        <br>• {{ track.presenter_label | default: 'Presenter' }}:
+        {% if s.presenter_url %}<a href="{{ s.presenter_url }}" target="_blank">{{ s.presenter }}</a>{% else %}{{ s.presenter }}{% endif %}
+        {% endif %}
+        {% if s.focus %}
+        {% if track.focus_style == 'list' %}
+        <div class="focus-list"><span class="muted">Focus:</span><ul>{% for f in s.focus %}<li>{{ f }}</li>{% endfor %}</ul></div>
+        {% else %}
+        <div class="focus">{% for f in s.focus %}<span class="tag">{{ f }}</span>{% endfor %}</div>
+        {% endif %}
+        {% endif %}
+        {% if s.bio %}
+        <details class="bio"><summary>Speaker bio</summary><p>{{ s.bio }}</p>{% if s.presenter_url %}<p><a href="{{ s.presenter_url }}" target="_blank">Personal website</a></p>{% endif %}</details>
+        {% endif %}
+      </td>
+      <td data-label="Video">
+        {% if s.youtube and s.youtube != '' %}
+        <a class="video-thumbnail" href="https://www.youtube.com/watch?v={{ s.youtube }}" target="_blank">
+          <img src="https://img.youtube.com/vi/{{ s.youtube }}/hqdefault.jpg" alt="{{ s.title | escape }} video" loading="lazy">
+          <span class="play"></span>
+        </a>
+        {% else %}
+        <span class="video-thumbnail video-thumbnail--soon">Coming soon, stay tuned!</span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
