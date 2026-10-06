@@ -22,7 +22,6 @@
   sessions:
     - date: 2026-08-28
       time: "10:30 AM"
-      label: Guest 1
       title: Auto-Research - Part 1
       presenter: Bojie Shen
       presenter_url: https://bojie-shen.com/
@@ -40,7 +39,6 @@
         multi-agent pathfinding, and electric vehicle routing.
     - date: 2026-09-04
       time: "10:30 AM"
-      label: Guest 1
       title: Auto-Research - Part 2
       presenter: Bojie Shen
       presenter_url: https://bojie-shen.com/
@@ -49,7 +47,6 @@
       bio: *bojie_bio
     - date: 2026-10-02
       time: "10:15 AM"
-      label: Guest 2
       title: "Learning to Orchestrate Multi-Agent Systems for Visual Reasoning and Embodied AI: Towards Neuro-Symbolic Agentic AI"
       presenter: Dr. Zhixi Cai
       presenter_url: https://profile.controlnet.space/

@@ -14,8 +14,13 @@
     <div class="container site-header__inner">
       <a href="{{ '/' | relative_url }}" class="site-header__logo">🧠 SynapSys</a>
       <nav class="site-header__nav">
-        {% for track in site.data.sessions %}<a href="#{{ track.id }}">{{ track.title }}</a>{% endfor %}
-        <a href="https://discord.gg/RZD4cn9Bd" target="_blank">Discord</a>
+        <details class="dropdown">
+          <summary>Sessions</summary>
+          <div class="dropdown__menu">
+            {% for track in site.data.sessions %}<a href="#{{ track.id }}">{{ track.title }}</a>{% endfor %}
+          </div>
+        </details>
+        <a href="https://www.youtube.com/@synapsyslab" target="_blank">YouTube</a>
       </nav>
     </div>
   </header>
@@ -27,8 +32,24 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <p>Copyright &copy; {{ site.time | date: '%Y' }} - SynapSys Reading Group</p>
-      <p><a href="https://discord.gg/RZD4cn9Bd" target="_blank">Join us on Discord</a></p>
+      <p><a href="https://www.youtube.com/@synapsyslab" target="_blank">Watch on YouTube</a></p>
     </div>
   </footer>
+  <script>
+    // Close the Sessions menu after picking a section or clicking elsewhere.
+    (function () {
+      var menu = document.querySelector('.dropdown');
+      if (!menu) return;
+      menu.addEventListener('click', function (e) {
+        if (e.target.closest('.dropdown__menu a')) menu.open = false;
+      });
+      document.addEventListener('click', function (e) {
+        if (!menu.contains(e.target)) menu.open = false;
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') menu.open = false;
+      });
+    })();
+  </script>
 </body>
 </html>
